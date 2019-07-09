@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    android:orientation="vertical"
+    tools:context=".AmainTest">
+
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/tool_bar"></include>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="100dp"
+        android:text="Translate"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/startEng"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/standard_border"
+            android:text="Eng"
+            android:layout_marginRight="10dp"
+            android:textSize="17dp" />
+
+
+
+        <Button
+            android:id="@+id/startRus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/standard_border"
+            android:text="Rus"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textMistake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="My mistakes"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/listMistakes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/ColorBorder"
+        android:dividerHeight="3dp">
+
+    </ListView>
+</LinearLayout>

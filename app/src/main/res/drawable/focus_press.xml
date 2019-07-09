@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:state_focused="false"
+        android:state_pressed="true"
+        android:duration="2000"
+
+        android:drawable="@drawable/right_answer" />
+
+    <item android:drawable="@drawable/standard_border" />
+</selector>
